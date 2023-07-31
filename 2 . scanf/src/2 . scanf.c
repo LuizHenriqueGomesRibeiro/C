@@ -40,6 +40,5 @@ int main(void) {
 	else{
 		printf("%d é maior do que %d",integer2,integer1);
 	}
-
 	return EXIT_SUCCESS;
 }

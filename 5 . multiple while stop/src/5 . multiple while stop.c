@@ -19,7 +19,7 @@ int main(void) {
 	unsigned int student = 1;
 	unsigned int result;
 
-	while(student<=10){
+	while(student <= 10){
 		printf("%s","Enter with result: '1 for passed' and '2 for don´t passed':\n");
 		int validInput = scanf("%d", &result);
 

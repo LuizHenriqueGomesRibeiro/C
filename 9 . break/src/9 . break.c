@@ -12,20 +12,18 @@
 #include <stdlib.h>
 
 int main(void) {
-
 	setvbuf(stdout, NULL, _IONBF, 0);
 
-		for(int p = 0; p <= 10; ++p){
+	for(int p = 0; p < 10; ++p){
 
-			if(p == 5){
-				continue;
-			}
+		printf("%u\n", p);
 
-			printf("%u ", p);
-
+		if(p == 2){
+			break;
 		}
-		printf("\nThe break statement is useful for us and this pops up in 5 (how you can see, we don´t have"
-				"5 here). Can you see that?");
 
-		return EXIT_SUCCESS;
+	}
+	printf("The break statement is useful for us. Can you see that?");
+
+	return EXIT_SUCCESS;
 }

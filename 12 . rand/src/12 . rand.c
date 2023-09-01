@@ -13,19 +13,19 @@
 
 int main(void) {
 
-	setvbuf(stdout, NULL, _IONBF, 0);
+	printf("  primeiro grupo\n");
 
-		for(int p = 0; p <= 10; ++p){
+	for(unsigned int i = 1; i<=50;++i){
+		printf("%3d", 1 + (rand() % 6));
 
-			if(p == 5){
-				continue;
-			}
-
-			printf("%u ", p);
-
+		if (i == 10) {
+			printf("%s", "\n  segundo grupo\n");
+		} else if (i == 20) {
+			printf("%s", "\n  terceiro grupo\n");
+		} else if (i == 30) {
+			printf("%s", "\n  quarto grupo\n");
+		} else if (i == 40) {
+			printf("%s", "\n  quinto grupo\n");
 		}
-		printf("\nThe break statement is useful for us and this pops up in 5 (how you can see, we don´t have"
-				"5 here). Can you see that?");
-
-		return EXIT_SUCCESS;
+	}
 }

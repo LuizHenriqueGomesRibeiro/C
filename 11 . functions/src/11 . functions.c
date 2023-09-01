@@ -15,17 +15,17 @@ int main(void) {
 
 	setvbuf(stdout, NULL, _IONBF, 0);
 
-		for(int p = 0; p <= 10; ++p){
+	for(int x = 1; x <= 10; ++x){
+		printf("%d somado dez e multiplicado por dez é %d\n", x, soma(x));
+	}
+}
 
-			if(p == 5){
-				continue;
-			}
+int soma(int y){
+	int s = y + 10;
+	return multiplicacao(s);
+	}
 
-			printf("%u ", p);
-
-		}
-		printf("\nThe break statement is useful for us and this pops up in 5 (how you can see, we don´t have"
-				"5 here). Can you see that?");
-
-		return EXIT_SUCCESS;
+int multiplicacao(int z){
+	int m = z*10;
+	return m;
 }
